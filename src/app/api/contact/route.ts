@@ -117,8 +117,12 @@ export async function POST(req: NextRequest) {
       emailSent,
     };
 
-    const existing = await getMessages();
-    await writeCmsFile("messages.json", [newMsg, ...existing]);
+    try {
+      const existing = await getMessages();
+      await writeCmsFile("messages.json", [newMsg, ...existing]);
+    } catch (fsErr) {
+      console.warn("Could not persist message to local filesystem (read-only env):", fsErr);
+    }
 
     return NextResponse.json({
       ok: true,
