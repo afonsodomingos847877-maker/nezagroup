@@ -105,7 +105,7 @@ export async function HomeView({ lang }: { lang: Lang }) {
               <div className="pt-2">
                 <Link
                   href={routes.about}
-                  className="inline-flex items-center gap-2 rounded-md bg-[#F4F6F5] px-4 py-2.5 text-xs sm:text-sm font-bold text-[#26368C] hover:bg-[#26368C] hover:text-white transition-colors"
+                  className="inline-flex items-center gap-2 rounded-md bg-[#F4F6F5] px-4 py-2.5 text-xs sm:text-sm font-bold text-[#222831] hover:bg-[#126B3A] hover:text-white transition-colors"
                 >
                   <span>{t.home.introLink}</span>
                   <ArrowRight className="h-4 w-4" />
@@ -153,10 +153,10 @@ export async function HomeView({ lang }: { lang: Lang }) {
                 href={`${routes.business}#${cluster.id}`}
                 className="group relative overflow-hidden flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-xs hover:border-[#126B3A] hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#26368C] to-[#126B3A] opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-[#126B3A] opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-[#26368C] text-xs font-bold text-white shadow-xs">
+                    <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-[#222831] text-xs font-bold text-white shadow-xs group-hover:bg-[#126B3A] transition-colors">
                       {cluster.number}
                     </span>
                     <ArrowRight className="h-4 w-4 text-slate-400 group-hover:text-[#126B3A] group-hover:translate-x-1 transition-all" />
@@ -226,7 +226,7 @@ export async function HomeView({ lang }: { lang: Lang }) {
             </div>
             <Link
               href={routes.projects}
-              className="inline-flex w-fit items-center gap-2 rounded-lg border border-[#26368C] px-4 py-2.5 text-xs font-bold text-[#26368C] hover:bg-[#26368C] hover:text-white transition-colors shrink-0"
+              className="inline-flex w-fit items-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-xs font-bold text-[#222831] hover:border-[#126B3A] hover:text-[#126B3A] transition-colors shrink-0"
             >
               <span>{t.home.projectsViewAll}</span>
               <ArrowRight className="h-3.5 w-3.5" />
@@ -251,11 +251,11 @@ export async function HomeView({ lang }: { lang: Lang }) {
                   <span className="text-[11px] font-bold uppercase tracking-wider text-[#126B3A]">
                     {lang === "pt" ? proj.sectorLabelPt : proj.sectorLabelEn}
                   </span>
-                  <h3 className="mt-1.5 text-base font-bold text-[#222831] group-hover:text-[#26368C] transition-colors">
+                  <h3 className="mt-1.5 text-base font-bold text-[#222831] group-hover:text-[#126B3A] transition-colors">
                     {lang === "pt" ? proj.titlePt : proj.titleEn}
                   </h3>
                   <p className="mt-1 text-xs text-slate-500">{proj.location}</p>
-                  <p className="mt-3 inline-block rounded-full bg-[#26368C]/10 px-2.5 py-0.5 text-[11px] font-semibold text-[#26368C]">
+                  <p className="mt-3 inline-block rounded-full bg-[#F4F6F5] border border-slate-200 px-2.5 py-0.5 text-[11px] font-semibold text-[#222831]">
                     {lang === "pt" ? proj.responsibilityPt : proj.responsibilityEn}
                   </p>
                 </div>
@@ -266,7 +266,7 @@ export async function HomeView({ lang }: { lang: Lang }) {
       </section>
 
       {/* Sectors of Activity */}
-      <section className="bg-[#26368C] py-14 sm:py-20 text-white relative overflow-hidden">
+      <section className="bg-[#222831] py-14 sm:py-20 text-white relative overflow-hidden">
         <div className="absolute inset-0 neza-grid-pattern opacity-30" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-10 sm:mb-12">
@@ -325,7 +325,7 @@ export async function HomeView({ lang }: { lang: Lang }) {
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">
                 <Link
                   href={routes.products}
-                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#26368C] px-5 py-3 text-xs font-bold text-white hover:bg-[#1B2766] transition-colors"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#126B3A] px-5 py-3 text-xs font-bold text-white hover:bg-[#0D4F2B] transition-colors"
                 >
                   <span>{t.home.excellenceCta}</span>
                   <ArrowRight className="h-3.5 w-3.5" />
@@ -360,7 +360,7 @@ export async function HomeView({ lang }: { lang: Lang }) {
             </div>
             <Link
               href={routes.partners}
-              className="inline-flex items-center gap-2 text-xs font-bold text-[#26368C] hover:text-[#126B3A]"
+              className="inline-flex items-center gap-2 text-xs font-bold text-[#222831] hover:text-[#126B3A]"
             >
               <span>{t.home.partnersViewAll}</span>
               <ArrowRight className="h-3.5 w-3.5" />

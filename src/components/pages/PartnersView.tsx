@@ -26,7 +26,7 @@ export async function PartnersView({ lang }: { lang: Lang }) {
       <section className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-10">
-            <h2 className="text-2xl font-bold text-[#26368C]">{t.clientsTitle}</h2>
+            <h2 className="text-2xl font-bold text-[#222831]">{t.clientsTitle}</h2>
             <p className="mt-2 text-sm sm:text-base text-slate-600">{t.clientsSubtitle}</p>
           </div>
 
@@ -82,7 +82,7 @@ export async function PartnersView({ lang }: { lang: Lang }) {
                     className={`mt-1.5 inline-block rounded-full px-2.5 py-0.5 text-[10px] font-semibold ${
                       partner.type === "collaborator"
                         ? "bg-[#126B3A]/10 text-[#126B3A]"
-                        : "bg-[#26368C]/10 text-[#26368C]"
+                        : "bg-[#F4F6F5] text-[#222831]"
                     }`}
                   >
                     {partner.type === "collaborator" ? t.typeCollaborator : t.typePartner}
@@ -96,7 +96,7 @@ export async function PartnersView({ lang }: { lang: Lang }) {
           </div>
 
           <div className="mt-10 rounded-lg border border-slate-300 bg-white p-4 text-xs text-slate-600 flex items-start gap-3">
-            <Info className="h-4 w-4 text-[#26368C] shrink-0 mt-0.5" />
+            <Info className="h-4 w-4 text-[#126B3A] shrink-0 mt-0.5" />
             <p>{t.transparencyNote}</p>
           </div>
         </div>

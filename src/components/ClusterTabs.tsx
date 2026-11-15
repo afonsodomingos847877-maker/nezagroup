@@ -54,7 +54,7 @@ export function ClusterTabs({
                   className={`shrink-0 rounded-lg px-4 py-2.5 text-xs font-bold transition-all cursor-pointer ${
                     isSelected
                       ? "bg-[#126B3A] text-white shadow-sm"
-                      : "bg-white text-[#222831] border border-slate-200 hover:border-[#26368C] hover:text-[#26368C]"
+                      : "bg-white text-[#222831] border border-slate-200 hover:border-[#126B3A] hover:text-[#126B3A]"
                   }`}
                 >
                   {c.number}. {lang === "pt" ? c.titlePt : c.titleEn}
@@ -71,7 +71,7 @@ export function ClusterTabs({
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-start">
             <div className="lg:col-span-7 space-y-6">
               <div className="flex items-center gap-3">
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#26368C] text-sm font-bold text-white">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#222831] text-sm font-bold text-white">
                   {cluster.number}
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-bold text-[#222831]">
@@ -117,7 +117,7 @@ export function ClusterTabs({
                     {cluster.collaborators.map((col) => (
                       <span
                         key={col}
-                        className="rounded-md bg-[#26368C]/10 px-2.5 py-1 text-xs font-semibold text-[#26368C]"
+                        className="rounded-md bg-[#F4F6F5] border border-slate-200 px-2.5 py-1 text-xs font-semibold text-[#222831]"
                       >
                         {col}
                       </span>
@@ -146,7 +146,7 @@ export function ClusterTabs({
 
               {relatedProjects.length > 0 && (
                 <div className="rounded-xl border border-slate-200 bg-[#F4F6F5] p-5">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-[#26368C] mb-3">
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-[#126B3A] mb-3">
                     {t.relatedProjectsHeading}
                   </h4>
                   <ul className="space-y-2.5">

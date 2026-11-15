@@ -64,7 +64,7 @@ export function Header({ lang }: { lang: Lang }) {
             className="h-10 w-10 sm:h-11 sm:w-11 rounded object-contain transition-transform group-hover:scale-105"
           />
           <div className="leading-tight">
-            <span className="block text-base sm:text-lg font-extrabold tracking-tight text-[#26368C]">
+            <span className="block text-base sm:text-lg font-extrabold tracking-tight text-[#222831]">
               NEZA <span className="text-[#126B3A]">GROUP</span>
             </span>
             <span className="block text-[10px] font-semibold tracking-widest text-slate-500 uppercase">
@@ -94,7 +94,7 @@ export function Header({ lang }: { lang: Lang }) {
         <div className="hidden xl:flex items-center gap-2.5 shrink-0">
           <Link
             href={switchUrl}
-            className="inline-flex items-center gap-1.5 rounded-md border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-semibold text-[#222831] hover:border-[#26368C] hover:text-[#26368C] transition-colors"
+            className="inline-flex items-center gap-1.5 rounded-md border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-semibold text-[#222831] hover:border-[#126B3A] hover:text-[#126B3A] transition-colors"
             title={otherLang === "en" ? "Switch to English" : "Mudar para Português"}
           >
             <Globe className="h-3.5 w-3.5 text-[#126B3A]" />

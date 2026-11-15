@@ -27,7 +27,7 @@ export function ContactView({ lang }: { lang: Lang }) {
           <div className="lg:col-span-5 space-y-6">
             <div className="rounded-xl border border-slate-200 bg-white p-7 shadow-sm space-y-6">
               <div>
-                <h2 className="text-xl font-bold text-[#26368C]">{t.hqTitle}</h2>
+                <h2 className="text-xl font-bold text-[#222831]">{t.hqTitle}</h2>
                 <p className="mt-1 text-sm font-semibold text-[#126B3A] flex items-center gap-2">
                   <Building2 className="h-4 w-4" />
                   <span>{t.hqEntity}</span>
@@ -54,7 +54,7 @@ export function ContactView({ lang }: { lang: Lang }) {
 
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-[#126B3A] shrink-0" />
-                  <a href={`mailto:${t.email}`} className="font-medium text-[#26368C] hover:underline">
+                  <a href={`mailto:${t.email}`} className="font-medium text-[#126B3A] hover:underline">
                     {t.email}
                   </a>
                 </div>

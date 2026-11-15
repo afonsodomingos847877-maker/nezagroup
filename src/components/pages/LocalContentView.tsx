@@ -85,7 +85,7 @@ export function LocalContentView({ lang }: { lang: Lang }) {
       <section className="bg-white py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-8">
-            <h2 className="text-2xl font-bold text-[#26368C]">{t.bizTitle}</h2>
+            <h2 className="text-2xl font-bold text-[#222831]">{t.bizTitle}</h2>
             <p className="mt-2 text-sm sm:text-base text-slate-600">{t.bizSubtitle}</p>
           </div>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -115,7 +115,7 @@ export function LocalContentView({ lang }: { lang: Lang }) {
                 key={group.title}
                 className="rounded-xl border border-slate-200 bg-white p-6 shadow-xs"
               >
-                <h3 className="text-base font-bold text-[#26368C] mb-3">{group.title}</h3>
+                <h3 className="text-base font-bold text-[#222831] mb-3">{group.title}</h3>
                 <div className="flex flex-wrap gap-2">
                   {group.items.map((item) => (
                     <span
@@ -133,7 +133,7 @@ export function LocalContentView({ lang }: { lang: Lang }) {
           <div className="mt-10 text-center">
             <Link
               href={`${routes.contact}?${lang === "pt" ? "servico=Conte%C3%BAdo%20Local" : "service=Local%20Content"}`}
-              className="inline-flex items-center gap-2 rounded-md bg-[#26368C] px-6 py-3 text-sm font-bold text-white hover:bg-[#1B2766] transition-colors"
+              className="inline-flex items-center gap-2 rounded-md bg-[#126B3A] px-6 py-3 text-sm font-bold text-white hover:bg-[#0D4F2B] transition-colors"
             >
               <span>{lang === "pt" ? "Falar com a Equipa de Conteúdo Local" : "Contact Our Local Content Team"}</span>
               <ArrowRight className="h-4 w-4" />

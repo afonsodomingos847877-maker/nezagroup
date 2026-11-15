@@ -66,7 +66,7 @@ export async function ProductsView({ lang }: { lang: Lang }) {
       <section className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-10">
-            <h2 className="text-2xl font-bold text-[#26368C]">{t.industrialTitle}</h2>
+            <h2 className="text-2xl font-bold text-[#222831]">{t.industrialTitle}</h2>
             <p className="mt-2 text-sm sm:text-base text-slate-600">{t.industrialSubtitle}</p>
           </div>
           {renderGrid(industrial)}

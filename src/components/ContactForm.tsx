@@ -85,7 +85,7 @@ export function ContactForm({ lang }: { lang: Lang }) {
       />
 
       {status === "success" && (
-        <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-4 flex items-start gap-3 text-emerald-900">
+        <div className="rounded-lg border border-[#126B3A]/30 bg-[#126B3A]/10 p-4 flex items-start gap-3 text-[#222831]">
           <CheckCircle2 className="h-5 w-5 text-[#126B3A] shrink-0 mt-0.5" />
           <div>
             <p className="text-sm font-bold">{t.successTitle}</p>

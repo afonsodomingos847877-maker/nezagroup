@@ -31,7 +31,7 @@ export function AboutView({ lang }: { lang: Lang }) {
             <p className="text-base leading-relaxed text-slate-600">{t.whoWeAreP3}</p>
 
             <div className="pt-4">
-              <h3 className="text-xl font-bold text-[#26368C] mb-2">{t.historyTitle}</h3>
+              <h3 className="text-xl font-bold text-[#222831] mb-2">{t.historyTitle}</h3>
               <p className="text-base leading-relaxed text-slate-600">{t.historyText}</p>
             </div>
           </div>
@@ -51,7 +51,7 @@ export function AboutView({ lang }: { lang: Lang }) {
                 </div>
               </div>
               <div className="border-t border-slate-200 pt-4 flex items-start gap-3">
-                <Target className="h-6 w-6 text-[#26368C] shrink-0 mt-0.5" />
+                <Target className="h-6 w-6 text-[#126B3A] shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-[#222831]">{t.missionTitle}</h3>
                   <p className="mt-1 text-sm text-slate-600 leading-relaxed">{t.missionText}</p>
@@ -72,7 +72,7 @@ export function AboutView({ lang }: { lang: Lang }) {
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {t.values.map((val) => (
               <div key={val.title} className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-                <h3 className="text-base font-bold text-[#26368C]">{val.title}</h3>
+                <h3 className="text-base font-bold text-[#222831]">{val.title}</h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">{val.desc}</p>
               </div>
             ))}
@@ -104,7 +104,7 @@ export function AboutView({ lang }: { lang: Lang }) {
                   key={pillar}
                   className="rounded-lg border border-slate-200 bg-[#F4F6F5] p-4 text-sm leading-relaxed text-[#222831]"
                 >
-                  <strong className="text-[#26368C]">{heading}:</strong>
+                  <strong className="text-[#222831]">{heading}:</strong>
                   {body}
                 </div>
               );
@@ -114,7 +114,7 @@ export function AboutView({ lang }: { lang: Lang }) {
       </section>
 
       {/* Business Model & Geographic Ambition */}
-      <section className="bg-[#26368C] py-16 text-white">
+      <section className="bg-[#222831] py-16 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 gap-10 md:grid-cols-2">
           <div className="rounded-xl border border-white/15 bg-white/5 p-7">
             <Layers className="h-6 w-6 text-white/80 mb-3" />

@@ -36,7 +36,7 @@ export async function LeadershipView({ lang }: { lang: Lang }) {
                 key={m.id}
                 className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm grid grid-cols-1 md:grid-cols-12"
               >
-                <div className="md:col-span-3 bg-[#26368C]/5 flex flex-col items-center justify-center p-6 border-b md:border-b-0 md:border-r border-slate-200">
+                <div className="md:col-span-3 bg-[#F4F6F5] flex flex-col items-center justify-center p-6 border-b md:border-b-0 md:border-r border-slate-200">
                   <img
                     src={m.image}
                     alt={m.name}
@@ -60,7 +60,7 @@ export async function LeadershipView({ lang }: { lang: Lang }) {
 
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 pt-2">
                     <div className="flex items-start gap-2.5">
-                      <Briefcase className="h-4 w-4 text-[#26368C] shrink-0 mt-0.5" />
+                      <Briefcase className="h-4 w-4 text-[#126B3A] shrink-0 mt-0.5" />
                       <div>
                         <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">
                           {t.experienceLabel}

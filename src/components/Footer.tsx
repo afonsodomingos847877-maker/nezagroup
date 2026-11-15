@@ -21,7 +21,7 @@ export function Footer({ lang }: { lang: Lang }) {
                 className="h-11 w-11 rounded object-contain"
               />
               <div>
-                <p className="text-lg font-black text-[#26368C] tracking-tight">
+                <p className="text-lg font-black text-[#222831] tracking-tight">
                   NEZA <span className="text-[#126B3A]">GROUP</span>
                 </p>
                 <p className="text-[11px] font-bold tracking-widest text-[#126B3A] uppercase">
@@ -37,7 +37,7 @@ export function Footer({ lang }: { lang: Lang }) {
 
           {/* Navigation */}
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#26368C] mb-4">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-[#222831] mb-4">
               {t.footer.quickLinks}
             </h3>
             <ul className="space-y-2.5 text-sm text-slate-600">
@@ -53,7 +53,7 @@ export function Footer({ lang }: { lang: Lang }) {
 
           {/* Clusters */}
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#26368C] mb-4">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-[#222831] mb-4">
               {t.footer.clusters}
             </h3>
             <ul className="space-y-2.5 text-sm text-slate-600">
@@ -87,7 +87,7 @@ export function Footer({ lang }: { lang: Lang }) {
 
           {/* Contact */}
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#26368C] mb-4">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-[#222831] mb-4">
               {t.footer.contactInfo}
             </h3>
             <ul className="space-y-3 text-sm text-slate-600">
@@ -111,7 +111,7 @@ export function Footer({ lang }: { lang: Lang }) {
             <div className="mt-5 pt-4 border-t border-slate-200">
               <Link
                 href="/admin"
-                className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-[#26368C] transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-[#126B3A] transition-colors"
               >
                 <Settings className="h-3.5 w-3.5" />
                 <span>{t.footer.cmsLink}</span>
@@ -124,7 +124,7 @@ export function Footer({ lang }: { lang: Lang }) {
           <p>
             © {new Date().getFullYear()} NEZA GROUP (NEZA Electromecânica e Instalação, Lda). {t.footer.rights}
           </p>
-          <p className="text-[#26368C] font-semibold">Maputo, Mozambique</p>
+          <p className="text-[#222831] font-semibold">Maputo, Mozambique</p>
         </div>
       </div>
     </footer>
