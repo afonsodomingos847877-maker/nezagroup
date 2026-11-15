@@ -427,8 +427,15 @@ export async function HomeView({ lang }: { lang: Lang }) {
       )}
 
       {/* Commercial Contact CTA */}
-      <section className="bg-[#126B3A] py-14 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <section className="relative overflow-hidden bg-[#222831] py-14 text-white">
+        <img
+          src="/fundao01.jpg"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-[#222831]/75" />
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="max-w-2xl">
             <h2 className="text-2xl sm:text-3xl font-extrabold">{t.home.ctaBannerTitle}</h2>
             <p className="mt-2 text-sm sm:text-base text-white/90">
