@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --neza-green: #126B3A;
+  --neza-green-dark: #0D502B;
+  --neza-blue: #26368C;
+  --neza-blue-dark: #1B2766;
+  --neza-white: #FFFFFF;
+  --neza-dark: #222831;
+  --neza-light: #F4F6F5;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--neza-white);
+  color: var(--neza-dark);
+  font-family: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  font-family: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+h3, h4, h5, h6 {
+  font-family: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.015em;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.neza-grid-pattern {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}

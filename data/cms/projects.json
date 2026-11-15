@@ -1,0 +1,200 @@
+[
+  {
+    "id": "chokwe-40mw",
+    "titlePt": "Central Eléctrica a Gás Green Field EPC de 40,29 MW",
+    "titleEn": "40.29 MW Green Field EPC Gas Fired Power Plant",
+    "location": "Chókwè, Moçambique",
+    "sector": "energia",
+    "sectorLabelPt": "Energia",
+    "sectorLabelEn": "Energy",
+    "client": "Pendente de confirmação",
+    "duration": "Pendente de confirmação",
+    "value": "USD 58 milhões",
+    "responsibilityType": "managed",
+    "responsibilityPt": "Gestão de Projecto (Lead Project Manager)",
+    "responsibilityEn": "Project Management (Lead Project Manager)",
+    "scopePt": "Liderança de gestão de projecto EPC para central eléctrica a gás de 40,29 MW, incluindo mini-subestação, estradas de acesso e unidades habitacionais de gestão da central.",
+    "scopeEn": "Lead Project Manager for the 40.29 MW Green Field EPC gas-fired power plant, including a mini-substation, access roads, and plant management housing units.",
+    "images": [
+      "/images/projects/chokwe-substation.jpg",
+      "/images/projects/chokwe-aerial.jpg",
+      "/images/projects/chokwe-housing.jpg",
+      "/images/projects/chokwe-roads.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "letsatsi-75mw",
+    "titlePt": "Central Solar Fotovoltaica Letsatsi de 75 MW",
+    "titleEn": "75 MW Letsatsi Photo-Voltaic Solar Plant",
+    "location": "Bloemfontein, Província de Free State, África do Sul",
+    "sector": "energias-renovaveis",
+    "sectorLabelPt": "Energias Renováveis",
+    "sectorLabelEn": "Renewable Energy",
+    "client": "FireFly",
+    "duration": "11 meses / 11 months",
+    "value": "ZAR 13 milhões",
+    "responsibilityType": "direct",
+    "responsibilityPt": "Instalação e Comissionamento Eléctrico",
+    "responsibilityEn": "Electrical Installation & Commissioning",
+    "scopePt": "Instalação e comissionamento de obras eléctricas: cabos de baixa e média tensão, serviços auxiliares AC de baixa tensão, montagem de painéis HV e LV, fornecimento e instalação de luminárias, montagem de caixas PCB e SCB, e instalação, ligação e ensaio do sistema de terra.",
+    "scopeEn": "Installation and commissioning of electrical works: low and medium voltage cables, AC low voltage auxiliary services, assembly of HV and LV electrical panels, supply and installation of light fittings, assembly of PCB and SCB boxes, and installation, connection and testing of earthing system.",
+    "images": [
+      "/images/products/electrical-panels-banner.png"
+    ],
+    "featured": true
+  },
+  {
+    "id": "pulida-82mw",
+    "titlePt": "Central Solar Fotovoltaica Pulida de 82,5 MWp",
+    "titleEn": "82.5 MWp Pulida PV Solar Plant",
+    "location": "Kimberley, África do Sul",
+    "sector": "energias-renovaveis",
+    "sectorLabelPt": "Energias Renováveis",
+    "sectorLabelEn": "Renewable Energy",
+    "client": "Enel Green Power RSA (Subcontrato para Group Five Construction)",
+    "duration": "Pendente de confirmação",
+    "value": "ZAR 30 milhões",
+    "responsibilityType": "subcontract",
+    "responsibilityPt": "Subcontratada (Group Five Construction)",
+    "responsibilityEn": "Subcontractor (Group Five Construction)",
+    "scopePt": "Cablagem de strings fotovoltaicas e instalação de caixas de string, sistema de terra e ligação equipotencial para cabines de conversão, cabos solares, ligações internas, cabos RS485 e fibra óptica, lançamento e terminação de cabos de média tensão, ensaios, comissionamento e etiquetagem.",
+    "scopeEn": "Electrical string wiring of PV modules and installation of string boxes, earthing and equipotential bonding for conversion cabins, solar cables, internal connections, RS485 and fiber optic cables, laying and termination of medium voltage cables, testing, commissioning and equipment labelling.",
+    "images": [
+      "/images/products/combiner-box.png"
+    ],
+    "featured": true
+  },
+  {
+    "id": "adams-82mw",
+    "titlePt": "Central Solar Fotovoltaica Adams de 82,5 MWp",
+    "titleEn": "82.5 MWp Adams PV Solar Plant",
+    "location": "Kathu, África do Sul",
+    "sector": "energias-renovaveis",
+    "sectorLabelPt": "Energias Renováveis",
+    "sectorLabelEn": "Renewable Energy",
+    "client": "Enel Green Power RSA (Subcontrato para Group Five Construction)",
+    "duration": "Pendente de confirmação",
+    "value": "ZAR 29 milhões",
+    "responsibilityType": "subcontract",
+    "responsibilityPt": "Subcontratada (Group Five Construction)",
+    "responsibilityEn": "Subcontractor (Group Five Construction)",
+    "scopePt": "Obras eléctricas para central solar fotovoltaica de 82,5 MWp: cablagem de strings, sistema de terra, cabos solares, comunicações RS485 e fibra óptica, cabos de média tensão, ensaios e comissionamento.",
+    "scopeEn": "Electrical works for the 82.5 MWp PV solar plant: string wiring, earthing system, solar cables, RS485 and fiber optic communications, medium voltage cabling, testing and commissioning.",
+    "images": [
+      "/images/products/mcc-cabling.png"
+    ],
+    "featured": false
+  },
+  {
+    "id": "driefontein-wastewater",
+    "titlePt": "Estação de Tratamento de Águas Residuais de Driefontein",
+    "titleEn": "Driefontein Wastewater Treatment Works",
+    "location": "Joanesburgo, Província de Gauteng, África do Sul",
+    "sector": "agua",
+    "sectorLabelPt": "Água",
+    "sectorLabelEn": "Water",
+    "client": "Johannesburg Water",
+    "duration": "18 meses / 18 months",
+    "value": "ZAR 68 milhões",
+    "responsibilityType": "direct",
+    "responsibilityPt": "Obras Eléctricas e de Instrumentação",
+    "responsibilityEn": "Electrical & Instrumentation Works",
+    "scopePt": "Execução integral das obras eléctricas e de instrumentação para a Estação de Tratamento de Águas Residuais de Driefontein, incluindo 3 mini-subestações de 500 kVA, cablagem de média e baixa tensão, 6 mastros de 30 m e Centros de Controlo de Motores (MCC).",
+    "scopeEn": "Electrical and instrumentation works for Driefontein Wastewater Treatment Works, including 3 x 500kVA mini-substations, medium and low voltage cabling, 6 x 30m-high masts, and Motor Control Centres (MCCs).",
+    "images": [
+      "/images/projects/chokwe-substation.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "portagens-mocambique",
+    "titlePt": "Sistema Electrónico de Cobrança de Portagens",
+    "titleEn": "Electronic Toll Collection System",
+    "location": "N1, N7, Ring Road – Katembe, Moçambique",
+    "sector": "transportes",
+    "sectorLabelPt": "Transportes",
+    "sectorLabelEn": "Transport",
+    "client": "Fundo de Estradas e Revimo, Moçambique",
+    "duration": "11 meses / 11 months",
+    "value": "USD 6 milhões",
+    "responsibilityType": "direct",
+    "responsibilityPt": "Instalação, Comissionamento e Manutenção",
+    "responsibilityEn": "Installation, Commissioning & Maintenance",
+    "scopePt": "Instalação, comissionamento e manutenção de sistemas electrónicos de cobrança de portagens: cabos de baixa e média tensão, painéis solares, serviços auxiliares AC, montagem de AVCs e painéis eléctricos, fornecimento de luminárias, montagem de equipamentos e ensaios completos do sistema.",
+    "scopeEn": "Installation, commissioning, and maintenance of electronic toll collection systems: low and medium voltage cables, solar panels, AC low voltage auxiliary services, assembly of AVCs and electrical panels, light fittings, equipment assembly, connection and system testing.",
+    "images": [
+      "/images/projects/toll-plaza-1.png",
+      "/images/projects/toll-plaza-2.png",
+      "/images/projects/katembe-bridge.png"
+    ],
+    "featured": true
+  },
+  {
+    "id": "saldanha-cogen",
+    "titlePt": "Central de Cogeração EPC de 13,6 MW",
+    "titleEn": "13.6 MW EPC Co-Gen Power Plant",
+    "location": "Saldanha, África do Sul",
+    "sector": "energia",
+    "sectorLabelPt": "Energia",
+    "sectorLabelEn": "Energy",
+    "client": "Pendente de confirmação",
+    "duration": "Pendente de confirmação",
+    "value": "ZAR 220 milhões",
+    "responsibilityType": "managed",
+    "responsibilityPt": "Gestão de Projecto (Project Manager)",
+    "responsibilityEn": "Project Management (Project Manager)",
+    "scopePt": "Gestão de projecto EPC para central de cogeração de 13,6 MW em Saldanha, envolvendo obras civis, instalações mecânicas e integração de motores de geração.",
+    "scopeEn": "Project Manager for the 13.6 MW EPC Co-Gen Power Plant in Saldanha, covering civil works, mechanical installations, and power generation engine integration.",
+    "images": [
+      "/images/projects/saldanha-plant.jpg",
+      "/images/projects/saldanha-civil.jpg",
+      "/images/projects/saldanha-engines.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "id": "ctrg-oil-gas",
+    "titlePt": "Manutenção e Ensaios Hidrostáticos — CTRG",
+    "titleEn": "Maintenance & Hydro Testing — CTRG",
+    "location": "Ressano Garcia, Moçambique",
+    "sector": "petroleo-gas",
+    "sectorLabelPt": "Petróleo e Gás",
+    "sectorLabelEn": "Oil & Gas",
+    "client": "CTRG (Central Térmica de Ressano Garcia)",
+    "duration": "Pendente de confirmação",
+    "value": "Pendente de confirmação",
+    "responsibilityType": "jv",
+    "responsibilityPt": "Joint Venture (em JV com EPCM Pty)",
+    "responsibilityEn": "Joint Venture (in JV with EPCM Pty)",
+    "scopePt": "Conclusão de ensaios hidrostáticos em Joint Venture com a EPCM Pty e oferta de solução completa SMEIPP (Estrutural, Mecânica, Eléctrica, Instrumentação, Tubagem e Caldeiraria), além de actuação autónoma em construção Eléctrica e de Instrumentação.",
+    "scopeEn": "Completed hydro testing in JV with EPCM Pty, offering a full SMEIPP (Structural, Mechanical, Electrical, Instrumentation, Piping and Platework) solution as well as stand-alone Electrical and Instrumentation construction.",
+    "images": [
+      "/images/projects/ctrg-maintenance.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "id": "infra-rodoviaria-aeroportos",
+    "titlePt": "Experiência Documentada em Infraestruturas Rodoviárias, Aeroportuárias e Abastecimento de Água",
+    "titleEn": "Documented Experience in Road, Airport & Bulk Water Infrastructure",
+    "location": "África do Sul (ORTIA, Bloemfontein, Cape Town, Gauteng, KZN, Masilonyana, uMzinyathi)",
+    "sector": "infraestruturas",
+    "sectorLabelPt": "Infraestruturas",
+    "sectorLabelEn": "Infrastructure",
+    "client": "ACSA, SANRAL, Gauteng Dept. of Roads & Transport, Municípios (Jozini, Masilonyana, uMzinyathi)",
+    "duration": "2014 – 2023",
+    "value": "ZAR 7,5M – ZAR 409M (por contrato)",
+    "responsibilityType": "managed",
+    "responsibilityPt": "Registo de Experiência em Projectos (Company Profile Pág. 7)",
+    "responsibilityEn": "Project Experience Record (Company Profile Page 7)",
+    "scopePt": "Inclui reabilitação de pistas nos aeroportos ORTIA, Bloemfontein e Cape Town (ACSA), manutenção rodoviária de rotina para a SANRAL, reabilitação da estrada P249/1 (Gauteng) e sistemas de abastecimento de água em Winburg (R230M) e Hlakazi Fase 1 (R409M).",
+    "scopeEn": "Includes runway and taxiway rehabilitation at ORTIA, Bloemfontein and Cape Town airports (ACSA), routine road maintenance for SANRAL, road P249/1 rehabilitation (Gauteng), and bulk water supply schemes in Winburg (R230M) and Hlakazi Phase 1 (R409M).",
+    "images": [
+      "/images/hero/road-construction.png",
+      "/images/hero/bridge-highway.png"
+    ],
+    "featured": false
+  }
+]
+

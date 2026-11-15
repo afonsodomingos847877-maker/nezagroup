@@ -1,0 +1,146 @@
+[
+  {
+    "id": "paineis-electricos",
+    "category": "industrial",
+    "namePt": "Painéis Eléctricos",
+    "nameEn": "Electrical Panels",
+    "descPt": "Quadros e painéis eléctricos, de instrumentação e automação concebidos e montados para aplicações industriais exigentes.",
+    "descEn": "Electrical, instrumentation, and automation panels engineered and assembled for demanding industrial environments.",
+    "appPt": "Centrais industriais, minas, utilidades de água e energia.",
+    "appEn": "Industrial plants, mines, water and energy utilities.",
+    "image": "/images/products/electrical-panels-banner.png"
+  },
+  {
+    "id": "estacoes-controlo-local",
+    "category": "industrial",
+    "namePt": "Estações de Controlo Local",
+    "nameEn": "Local Control Stations",
+    "descPt": "Unidades de comando e monitorização local robustas para operação segura junto aos equipamentos de campo.",
+    "descEn": "Robust local control and monitoring units designed for safe operation directly alongside field equipment.",
+    "appPt": "Centrais industriais, minas, utilidades de água e energia.",
+    "appEn": "Industrial plants, mines, water and energy utilities.",
+    "image": "/images/products/local-control-station.png"
+  },
+  {
+    "id": "caixas-combinadoras",
+    "category": "industrial",
+    "namePt": "Caixas Combinadoras",
+    "nameEn": "Combiner Boxes",
+    "descPt": "Caixas combinadoras e string boxes para agrupamento, protecção e seccionamento de circuitos em centrais solares e instalações industriais.",
+    "descEn": "Combiner boxes and string boxes for circuit grouping, protection, and isolation in solar and industrial plants.",
+    "appPt": "Centrais solares fotovoltaicas e plantas industriais.",
+    "appEn": "Solar PV power plants and industrial facilities.",
+    "image": "/images/products/combiner-box.png"
+  },
+  {
+    "id": "paineis-mimic",
+    "category": "industrial",
+    "namePt": "Painéis de Controlo Mimic",
+    "nameEn": "Mimic Control Panels",
+    "descPt": "Painéis sinópticos de visualização de processo para supervisão intuitiva de fluxos, válvulas e estados operacionais.",
+    "descEn": "Synoptic process visualization panels for intuitive supervision of flows, valves, and operational states.",
+    "appPt": "Centrais industriais, instalações de processo e minas.",
+    "appEn": "Industrial plants, process plants, and mines.",
+    "image": "/images/products/panel-technician.png"
+  },
+  {
+    "id": "paineis-pneumaticos",
+    "category": "industrial",
+    "namePt": "Painéis Pneumáticos",
+    "nameEn": "Pneumatic Panels",
+    "descPt": "Painéis de controlo pneumático integrados para actuação de válvulas e sistemas de automação industrial.",
+    "descEn": "Integrated pneumatic control panels for valve actuation and industrial automation systems.",
+    "appPt": "Centrais industriais, minas, utilidades de água e energia.",
+    "appEn": "Industrial plants, mines, water and energy utilities.",
+    "image": "/images/products/panel-factory.png"
+  },
+  {
+    "id": "mcc",
+    "category": "industrial",
+    "namePt": "Centros de Controlo de Motores (MCC)",
+    "nameEn": "Motor Control Centres (MCCs)",
+    "descPt": "Conjuntos integrados para arranque, protecção e comando centralizado de motores eléctricos em instalações de processo e tratamento de água.",
+    "descEn": "Integrated assemblies for centralized starting, protection, and control of electric motors in process and water treatment plants.",
+    "appPt": "Estações de tratamento de águas residuais, mineração e indústria pesada.",
+    "appEn": "Wastewater treatment works, mining, and heavy industry.",
+    "image": "/images/products/mcc-cabling.png"
+  },
+  {
+    "id": "mini-subestacoes",
+    "category": "industrial",
+    "namePt": "Mini-subestações",
+    "nameEn": "Mini-substations",
+    "descPt": "Fornecimento, instalação e comissionamento de mini-subestações compactas (ex.: unidades de 500 kVA documentadas em projectos).",
+    "descEn": "Supply, installation, and commissioning of compact mini-substations (e.g., 500 kVA units documented in project scope).",
+    "appPt": "Distribuição de média e baixa tensão em infraestruturas e centrais.",
+    "appEn": "Medium and low voltage distribution across infrastructure and plants.",
+    "image": "/images/projects/chokwe-substation.jpg"
+  },
+  {
+    "id": "cablagem-electrica",
+    "category": "industrial",
+    "namePt": "Sistemas de Cablagem Eléctrica",
+    "nameEn": "Electrical Cabling Systems",
+    "descPt": "Lançamento, terminação e ensaio de cabos de baixa, média e alta tensão, subterrâneos ou em estruturas, além de cabos solares, RS485 e fibra óptica.",
+    "descEn": "Laying, termination, and testing of low, medium, and high voltage cables (underground and on structure), plus solar, RS485, and fiber optic cabling.",
+    "appPt": "Centrais energéticas, subestações, parques solares e portagens.",
+    "appEn": "Power plants, substations, solar parks, and toll plazas.",
+    "image": "/images/products/mcc-cabling.png"
+  },
+  {
+    "id": "sistemas-cctv",
+    "category": "technology",
+    "namePt": "Sistemas CCTV",
+    "nameEn": "CCTV Systems",
+    "descPt": "Sistemas de videovigilância de alta definição integrados com parceiros tecnológicos para protecção de activos e evidência visual.",
+    "descEn": "High-definition video surveillance systems integrated with technology partners for asset protection and visual evidence.",
+    "appPt": "Instalações industriais, armazéns, edifícios comerciais e infraestruturas.",
+    "appEn": "Industrial sites, warehouses, commercial buildings, and infrastructure.",
+    "image": "/images/technology/cctv-cameras.png"
+  },
+  {
+    "id": "vigilancia-remota",
+    "category": "technology",
+    "namePt": "Vigilância Remota",
+    "nameEn": "Remote Surveillance",
+    "descPt": "Ligação em tempo real que permite aos clientes e operadores autorizados visualizar e monitorizar câmaras ao vivo a partir de qualquer localização.",
+    "descEn": "Real-time connectivity enabling clients and trained personnel to view and monitor live camera feeds from any remote location.",
+    "appPt": "Monitorização contínua de operações, linhas de produção e perímetros.",
+    "appEn": "Continuous monitoring of operations, production lines, and perimeters.",
+    "image": "/images/technology/remote-monitoring.png"
+  },
+  {
+    "id": "controlo-acessos",
+    "category": "technology",
+    "namePt": "Controlo de Acessos e Matrículas",
+    "nameEn": "Access Control & Licence Plate Recognition",
+    "descPt": "Soluções de controlo de acessos, registo de entradas de pessoal e reconhecimento automático de matrículas (ALPR).",
+    "descEn": "Access control solutions, staff entry time monitoring, and automatic licence plate recognition (ALPR).",
+    "appPt": "Portarias industriais, parques logísticos, armazéns e portagens.",
+    "appEn": "Industrial gates, logistics parks, warehouses, and toll corridors.",
+    "image": "/images/technology/close-protection.png"
+  },
+  {
+    "id": "sistemas-monitorizacao",
+    "category": "technology",
+    "namePt": "Sistemas de Monitorização e Segurança",
+    "nameEn": "Monitoring & Security Systems",
+    "descPt": "Armamento e desarmamento remoto, controlo de acessos fora de horas e registo seguro de dados de incidentes em servidor.",
+    "descEn": "Remote arming/disarming, after-hours access control, and secure incident data logging on central servers.",
+    "appPt": "Protecção de activos sensíveis, redução de perdas e produtividade.",
+    "appEn": "Protection of sensitive assets, loss prevention, and operational uptime.",
+    "image": "/images/technology/security-team.png"
+  },
+  {
+    "id": "centro-controlo-24h",
+    "category": "technology",
+    "namePt": "Centro de Controlo de Segurança 24 Horas",
+    "nameEn": "24-Hour Security Control Center",
+    "descPt": "Sala de controlo offsite a operar 24 horas por dia, concebida para integrar com sistemas de segurança existentes e responder proactivamente a incidentes.",
+    "descEn": "State-of-the-art 24-hour offsite control room designed to integrate seamlessly with existing security systems for proactive incident response.",
+    "appPt": "Supervisão contínua 24/7 para empresas, frotas e infraestruturas críticas.",
+    "appEn": "24/7 continuous supervision for enterprises, fleets, and critical infrastructure.",
+    "image": "/images/technology/remote-monitoring.png"
+  }
+]
+

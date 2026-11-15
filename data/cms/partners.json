@@ -1,0 +1,39 @@
+{
+  "clients": [
+    { "id": "cahora-bassa", "name": "Hidroeléctrica de Cahora Bassa", "logo": "/images/clients/cahora-bassa.png", "sectorPt": "Energia", "sectorEn": "Energy" },
+    { "id": "ctrg", "name": "CTRG — Central Térmica de Ressano Garcia", "logo": "/images/clients/ctrg.jpg", "sectorPt": "Energia / Gás", "sectorEn": "Power / Gas" },
+    { "id": "gigawatt", "name": "Gigawatt Moçambique, SA", "logo": "/images/clients/gigawatt.png", "sectorPt": "Energia", "sectorEn": "Energy" },
+    { "id": "kuvaninga", "name": "Kuvaninga", "logo": "/images/clients/kuvaninga.png", "sectorPt": "Energia", "sectorEn": "Energy" },
+    { "id": "twigg", "name": "Twigg Exploration & Mining Limitada", "logo": "/images/clients/twigg.png", "sectorPt": "Mineração", "sectorEn": "Mining" },
+    { "id": "mrm", "name": "MRM — Montepuez Ruby Mining", "logo": "/images/clients/mrm.jpg", "sectorPt": "Mineração", "sectorEn": "Mining" },
+    { "id": "ane", "name": "ANE — Administração Nacional de Estradas, IP", "logo": "/images/clients/ane.png", "sectorPt": "Infraestruturas", "sectorEn": "Infrastructure" },
+    { "id": "edm", "name": "EDM — Electricidade de Moçambique", "logo": "/images/clients/edm.jpg", "sectorPt": "Electricidade", "sectorEn": "Electricity" },
+    { "id": "pure-life", "name": "Pure Life Organic Foods", "logo": "/images/clients/pure-life.jpg", "sectorPt": "Agro-indústria", "sectorEn": "Agribusiness" }
+  ],
+  "partners": [
+    { "id": "hatch", "name": "Hatch", "logo": "/images/partners/hatch.png", "type": "collaborator", "clusterPt": "Design e Engenharia", "clusterEn": "Design & Engineering" },
+    { "id": "rankin", "name": "Rankin Engineering", "logo": "/images/partners/rankin.png", "type": "collaborator", "clusterPt": "Design e Engenharia", "clusterEn": "Design & Engineering" },
+    { "id": "ix-engineers", "name": "iX engineers", "logo": "/images/partners/ix-engineers.png", "type": "collaborator", "clusterPt": "Design e Engenharia", "clusterEn": "Design & Engineering" },
+    { "id": "wbho", "name": "WBHO", "logo": "/images/partners/wbho.png", "type": "collaborator", "clusterPt": "Construção e Materiais", "clusterEn": "Construction & Materials" },
+    { "id": "kapsch", "name": "Kapsch TrafficCom", "logo": "/images/partners/kapsch.png", "type": "collaborator", "clusterPt": "Tecnologia e Serviços", "clusterEn": "Technology & Services" },
+    { "id": "dbsa", "name": "DBSA", "logo": "/images/partners/dbsa.png", "type": "collaborator", "clusterPt": "Investimentos e Concessões", "clusterEn": "Investments & Concessions" },
+    { "id": "eaglestone", "name": "Eaglestone", "logo": "/images/partners/eaglestone.png", "type": "collaborator", "clusterPt": "Investimentos e Concessões", "clusterEn": "Investments & Concessions" },
+    { "id": "mota-engil", "name": "Mota-Engil", "logo": "/images/partners/mota-engil.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "larsen-toubro", "name": "Larsen & Toubro", "logo": "/images/partners/larsen-toubro.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "houer", "name": "HOUER", "logo": "/images/partners/houer.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "independent-verifier", "name": "Independent Verifier", "logo": "/images/partners/independent-verifier.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "transrail", "name": "Transrail", "logo": "/images/partners/transrail.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "tecnica", "name": "Técnica Engenheiros Consultores, Lda.", "logo": "/images/partners/tecnica.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "ahart", "name": "Ahart Solutions International", "logo": "/images/partners/ahart.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "fadsol", "name": "FadSol", "logo": "/images/partners/fadsol.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "osk", "name": "OSK International (Pty) Ltd.", "logo": "/images/partners/osk.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "ndwandwe", "name": "Ndwandwe Management, Lda", "logo": "/images/partners/ndwandwe.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "unik", "name": "UNIK Civil Engineering", "logo": "/images/partners/unik.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "rezayat", "name": "Rezayat Group", "logo": "/images/partners/rezayat.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "csbf", "name": "CSBF Consultoria, Serviços e Fornecimento de Bens, Lda", "logo": "/images/partners/csbf.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "raha", "name": "Raha Global Investments", "logo": "/images/partners/raha.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "edibon", "name": "Edibon", "logo": "/images/partners/edibon.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" },
+    { "id": "ncc", "name": "NCC", "logo": "/images/partners/ncc.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" }
+  ]
+}
+
