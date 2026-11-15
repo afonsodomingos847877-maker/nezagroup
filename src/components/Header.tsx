@@ -37,7 +37,7 @@ export function Header({ lang }: { lang: Lang }) {
           <div className="flex items-center gap-5">
             <span className="inline-flex items-center gap-1.5">
               <MapPin className="h-3 w-3 text-white/70" />
-              <span>Rovuma Business Centre, Maputo, Moçambique</span>
+              <span>Nexo Business Center, Av. 24 de Julho, Maputo, Moçambique</span>
             </span>
             <a href="tel:+258863280431" className="inline-flex items-center gap-1.5 hover:text-white transition-colors">
               <Phone className="h-3 w-3 text-white/70" />

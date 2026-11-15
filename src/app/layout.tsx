@@ -49,7 +49,7 @@ export default function RootLayout({
     legalName: "NEZA Electromecânica e Instalação, Lda",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Rovuma Business Centre, 601, Rua da Sé 144, 6º Andar",
+      streetAddress: "Nexo Business Center, Av. 24 de Julho, Polana Cimento, NR. 1001, porta 12 e 13",
       addressLocality: "Maputo",
       addressCountry: "MZ",
     },
