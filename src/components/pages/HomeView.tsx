@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2, Layers, Shield, Zap, Globe2, Building2, Cpu }
 import { getDict } from "@/lib/i18n";
 import { Lang, ROUTE_MAP } from "@/lib/routes";
 import { getNews, getPartnersData, getProjects, getServices } from "@/lib/cms";
+import { TypewriterTitle } from "@/components/TypewriterTitle";
 
 export async function HomeView({ lang }: { lang: Lang }) {
   const t = getDict(lang);
@@ -50,9 +51,13 @@ export async function HomeView({ lang }: { lang: Lang }) {
               <span className="h-1.5 w-1.5 rounded-full bg-[#126B3A]" />
               {t.hero.badge}
             </span>
-            <h1 className="text-2xl font-black tracking-tight text-white sm:text-4xl lg:text-[52px] leading-[1.12]">
-              {t.hero.title}
-            </h1>
+            <TypewriterTitle
+              as="h1"
+              text={t.hero.title}
+              speedMs={20}
+              cursorClassName="bg-white"
+              className="text-2xl font-black tracking-tight text-white sm:text-4xl lg:text-[52px] leading-[1.12]"
+            />
             <p className="mt-5 text-sm sm:text-lg leading-relaxed text-slate-200 max-w-2xl">
               {t.hero.subtitle}
             </p>
@@ -96,9 +101,11 @@ export async function HomeView({ lang }: { lang: Lang }) {
                   {t.home.introLabel}
                 </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#222831] leading-tight">
-                {t.home.introTitle}
-              </h2>
+              <TypewriterTitle
+                as="h2"
+                text={t.home.introTitle}
+                className="text-2xl sm:text-3xl font-extrabold text-[#222831] leading-tight"
+              />
               <p className="text-sm sm:text-base leading-relaxed text-slate-600">
                 {t.home.introText}
               </p>
@@ -138,9 +145,11 @@ export async function HomeView({ lang }: { lang: Lang }) {
                 {t.home.clustersLabel}
               </p>
             </div>
-            <h2 className="mt-2 text-2xl sm:text-3xl font-extrabold text-[#222831]">
-              {t.home.clustersTitle}
-            </h2>
+            <TypewriterTitle
+              as="h2"
+              text={t.home.clustersTitle}
+              className="mt-2 text-2xl sm:text-3xl font-extrabold text-[#222831]"
+            />
             <p className="mt-3 text-sm sm:text-base text-slate-600">
               {t.home.clustersSubtitle}
             </p>
@@ -217,9 +226,11 @@ export async function HomeView({ lang }: { lang: Lang }) {
                   {t.home.projectsLabel}
                 </p>
               </div>
-              <h2 className="mt-2 text-2xl sm:text-3xl font-extrabold text-[#222831]">
-                {t.home.projectsTitle}
-              </h2>
+              <TypewriterTitle
+                as="h2"
+                text={t.home.projectsTitle}
+                className="mt-2 text-2xl sm:text-3xl font-extrabold text-[#222831]"
+              />
               <p className="mt-2 text-sm sm:text-base text-slate-600 max-w-2xl">
                 {t.home.projectsSubtitle}
               </p>
@@ -279,9 +290,12 @@ export async function HomeView({ lang }: { lang: Lang }) {
             <p className="text-xs font-bold uppercase tracking-widest text-white/75">
               {t.home.sectorsLabel}
             </p>
-            <h2 className="mt-2 text-2xl sm:text-3xl font-extrabold">
-              {t.home.sectorsTitle}
-            </h2>
+            <TypewriterTitle
+              as="h2"
+              text={t.home.sectorsTitle}
+              cursorClassName="bg-white"
+              className="mt-2 text-2xl sm:text-3xl font-extrabold"
+            />
           </div>
 
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -322,9 +336,11 @@ export async function HomeView({ lang }: { lang: Lang }) {
                   {t.home.excellenceLabel}
                 </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#222831]">
-                {t.home.excellenceTitle}
-              </h2>
+              <TypewriterTitle
+                as="h2"
+                text={t.home.excellenceTitle}
+                className="text-2xl sm:text-3xl font-extrabold text-[#222831]"
+              />
               <p className="text-sm sm:text-base leading-relaxed text-slate-600">
                 {t.home.excellenceText}
               </p>
@@ -437,7 +453,12 @@ export async function HomeView({ lang }: { lang: Lang }) {
         <div className="absolute inset-0 bg-[#222831]/75" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-2xl sm:text-3xl font-extrabold">{t.home.ctaBannerTitle}</h2>
+            <TypewriterTitle
+              as="h2"
+              text={t.home.ctaBannerTitle}
+              cursorClassName="bg-white"
+              className="text-2xl sm:text-3xl font-extrabold"
+            />
             <p className="mt-2 text-sm sm:text-base text-white/90">
               {t.home.ctaBannerText}
             </p>
