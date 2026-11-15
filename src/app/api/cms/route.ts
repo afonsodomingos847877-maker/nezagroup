@@ -12,9 +12,19 @@ const ALLOWED_COLLECTIONS = new Set([
 ]);
 
 function checkAuth(req: NextRequest): boolean {
-  const expected = process.env.CMS_ADMIN_PASSWORD || "neza2026";
-  const provided = req.headers.get("x-cms-password") || "";
-  return provided === expected;
+  const expectedEmail = (
+    process.env.CMS_ADMIN_EMAIL || "admin@nezagroup.co.mz"
+  )
+    .trim()
+    .toLowerCase();
+  const expectedPassword = process.env.CMS_ADMIN_PASSWORD || "@Admin123@";
+
+  const providedEmail = (req.headers.get("x-cms-email") || "")
+    .trim()
+    .toLowerCase();
+  const providedPassword = req.headers.get("x-cms-password") || "";
+
+  return providedEmail === expectedEmail && providedPassword === expectedPassword;
 }
 
 export async function GET(req: NextRequest) {

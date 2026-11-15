@@ -101,6 +101,7 @@ interface SummaryStats {
 }
 
 export function AdminDashboard() {
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [authed, setAuthed] = useState(false);
   const [authError, setAuthError] = useState("");
@@ -115,17 +116,20 @@ export function AdminDashboard() {
   const [savedNotice, setSavedNotice] = useState("");
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  async function loadTab(tab: TabKey, pwd = password) {
+  async function loadTab(tab: TabKey, userEmail = email, pwd = password) {
     setLoading(true);
     setSavedNotice("");
     setSelectedIndex(0);
     try {
       const col = tab === "dashboard" ? "summary" : tab;
       const res = await fetch(`/api/cms?collection=${col}`, {
-        headers: { "x-cms-password": pwd },
+        headers: {
+          "x-cms-email": userEmail,
+          "x-cms-password": pwd,
+        },
       });
       if (!res.ok) {
-        setAuthError("Palavra-passe inválida.");
+        setAuthError("Email ou palavra-passe inválidos.");
         setAuthed(false);
         return;
       }
@@ -148,7 +152,7 @@ export function AdminDashboard() {
 
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault();
-    await loadTab("dashboard", password);
+    await loadTab("dashboard", email, password);
   }
 
   async function handleTabChange(tab: TabKey) {
@@ -166,6 +170,7 @@ export function AdminDashboard() {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
+          "x-cms-email": email,
           "x-cms-password": password,
         },
         body: JSON.stringify({ collection: activeTab, data: dataToSave }),
@@ -259,7 +264,24 @@ export function AdminDashboard() {
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
               <label className="block text-xs font-semibold text-[#222831] mb-1.5">
-                Palavra-passe de Administrador
+                Email de Administrador
+              </label>
+              <div className="relative">
+                <Mail className="h-4 w-4 text-slate-400 absolute left-3 top-3" />
+                <input
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="admin@nezagroup.co.mz"
+                  className="w-full rounded-lg border border-slate-300 pl-9 pr-3 py-2.5 text-sm focus:border-[#126B3A] focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-xs font-semibold text-[#222831] mb-1.5">
+                Palavra-passe
               </label>
               <div className="relative">
                 <Lock className="h-4 w-4 text-slate-400 absolute left-3 top-3" />
@@ -272,9 +294,6 @@ export function AdminDashboard() {
                   className="w-full rounded-lg border border-slate-300 pl-9 pr-3 py-2.5 text-sm focus:border-[#126B3A] focus:outline-none"
                 />
               </div>
-              <p className="mt-1.5 text-[11px] text-slate-500">
-                Predefinição local: <code>neza2026</code> (configurável via <code>CMS_ADMIN_PASSWORD</code>).
-              </p>
             </div>
 
             {authError && (
@@ -647,3 +666,4 @@ export function AdminDashboard() {
     </div>
   );
 }
+
