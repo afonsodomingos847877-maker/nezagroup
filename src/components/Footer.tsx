@@ -150,8 +150,6 @@ export function Footer({ lang }: { lang: Lang }) {
                 Afonso Domingos
               </a>
             </p>
-            <span className="hidden sm:inline text-slate-300">•</span>
-            <span className="text-[#222831] font-semibold">Maputo, Mozambique</span>
           </div>
         </div>
       </div>
