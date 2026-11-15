@@ -110,7 +110,7 @@ export function Footer({ lang }: { lang: Lang }) {
             </ul>
             <div className="mt-5 pt-4 border-t border-slate-200">
               <Link
-                href="/cms"
+                href="/admin"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-[#26368C] transition-colors"
               >
                 <Settings className="h-3.5 w-3.5" />

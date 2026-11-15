@@ -22,6 +22,34 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   const collection = req.nextUrl.searchParams.get("collection") || "projects";
+
+  if (collection === "summary") {
+    const [projects, services, products, leadership, partners, news, messages] =
+      await Promise.all([
+        readCmsFile<unknown[]>("projects.json"),
+        readCmsFile<unknown[]>("services.json"),
+        readCmsFile<unknown[]>("products.json"),
+        readCmsFile<unknown[]>("leadership.json"),
+        readCmsFile<{ clients: unknown[]; partners: unknown[] }>("partners.json"),
+        readCmsFile<unknown[]>("news.json"),
+        readCmsFile<unknown[]>("messages.json"),
+      ]);
+
+    return NextResponse.json({
+      summary: {
+        projects: projects.length,
+        services: services.length,
+        products: products.length,
+        leadership: leadership.length,
+        clients: partners.clients?.length || 0,
+        partners: partners.partners?.length || 0,
+        news: news.length,
+        messages: messages.length,
+      },
+      recentMessages: messages.slice(0, 5),
+    });
+  }
+
   if (!ALLOWED_COLLECTIONS.has(collection)) {
     return NextResponse.json({ error: "Invalid collection" }, { status: 400 });
   }
@@ -41,4 +69,3 @@ export async function PUT(req: NextRequest) {
   await writeCmsFile(`${collection}.json`, data);
   return NextResponse.json({ ok: true });
 }
-
