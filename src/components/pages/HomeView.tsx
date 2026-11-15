@@ -267,7 +267,13 @@ export async function HomeView({ lang }: { lang: Lang }) {
 
       {/* Sectors of Activity */}
       <section className="bg-[#222831] py-14 sm:py-20 text-white relative overflow-hidden">
-        <div className="absolute inset-0 neza-grid-pattern opacity-30" />
+        <img
+          src="/fundao01.jpg"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-[#222831]/75" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-10 sm:mb-12">
             <p className="text-xs font-bold uppercase tracking-widest text-white/75">
