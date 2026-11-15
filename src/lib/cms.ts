@@ -1,5 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
+import { getMongoDb } from "./mongodb";
 
 const CMS_DIR = path.join(process.cwd(), "data", "cms");
 
@@ -110,16 +111,63 @@ export interface ContactMessage {
   emailSent: boolean;
 }
 
-export async function readCmsFile<T>(filename: string): Promise<T> {
+interface CmsDoc {
+  _id: string;
+  data: unknown;
+  updatedAt: Date;
+}
+
+async function readLocalJson<T>(filename: string): Promise<T> {
   const filePath = path.join(CMS_DIR, filename);
   const raw = await fs.readFile(filePath, "utf-8");
   return JSON.parse(raw) as T;
 }
 
+export async function readCmsFile<T>(filename: string): Promise<T> {
+  const key = filename.replace(/\.json$/, "");
+  try {
+    const db = await getMongoDb();
+    if (db) {
+      const col = db.collection<CmsDoc>("cms_collections");
+      const existing = await col.findOne({ _id: key });
+      if (existing) {
+        return existing.data as T;
+      }
+      // Auto-seed MongoDB from local JSON on first access
+      const seedData = await readLocalJson<T>(filename);
+      await col.updateOne(
+        { _id: key },
+        { $set: { data: seedData, updatedAt: new Date() } },
+        { upsert: true }
+      );
+      return seedData;
+    }
+  } catch (err) {
+    console.warn(`MongoDB read fallback for ${key}:`, err);
+  }
+  return readLocalJson<T>(filename);
+}
+
 export async function writeCmsFile<T>(filename: string, data: T): Promise<void> {
-  const filePath = path.join(CMS_DIR, filename);
-  await fs.mkdir(CMS_DIR, { recursive: true });
-  await fs.writeFile(filePath, JSON.stringify(data, null, 2), "utf-8");
+  const key = filename.replace(/\.json$/, "");
+  const db = await getMongoDb();
+  if (db) {
+    const col = db.collection<CmsDoc>("cms_collections");
+    await col.updateOne(
+      { _id: key },
+      { $set: { data, updatedAt: new Date() } },
+      { upsert: true }
+    );
+  }
+
+  // Also sync local JSON when filesystem is writable (ignored on Vercel read-only env)
+  try {
+    const filePath = path.join(CMS_DIR, filename);
+    await fs.mkdir(CMS_DIR, { recursive: true });
+    await fs.writeFile(filePath, JSON.stringify(data, null, 2), "utf-8");
+  } catch {
+    // Expected on read-only serverless filesystems
+  }
 }
 
 export const getProjects = () => readCmsFile<ProjectItem[]>("projects.json");
@@ -129,4 +177,3 @@ export const getLeadership = () => readCmsFile<LeadershipMember[]>("leadership.j
 export const getPartnersData = () => readCmsFile<PartnerClientData>("partners.json");
 export const getNews = () => readCmsFile<NewsItem[]>("news.json");
 export const getMessages = () => readCmsFile<ContactMessage[]>("messages.json");
-
