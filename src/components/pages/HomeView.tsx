@@ -39,10 +39,9 @@ export async function HomeView({ lang }: { lang: Lang }) {
           <img
             src="/images/bannerneza.jpg"
             alt="NEZA GROUP Engineering & Infrastructure Banner"
-            className="h-full w-full object-cover opacity-45"
+            className="h-full w-full object-cover object-top"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#222831]/95 via-[#222831]/80 to-[#26368C]/55" />
-          <div className="absolute inset-0 neza-grid-pattern opacity-25" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#222831]/85 via-[#222831]/40 to-transparent" />
         </div>
 
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
