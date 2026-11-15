@@ -120,11 +120,39 @@ export function Footer({ lang }: { lang: Lang }) {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-slate-200 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="mt-12 border-t border-slate-200 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>
             © {new Date().getFullYear()} NEZA GROUP (NEZA Electromecânica e Instalação, Lda). {t.footer.rights}
           </p>
-          <p className="text-[#222831] font-semibold">Maputo, Mozambique</p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="https://muv.co.mz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-slate-500 hover:text-[#126B3A] transition-colors"
+            >
+              <span>Powered by</span>
+              <img
+                src="/logo_muv.png"
+                alt="MUV"
+                className="h-4 w-auto object-contain"
+              />
+            </a>
+            <span className="text-slate-300">•</span>
+            <p>
+              Designed by{" "}
+              <a
+                href="https://www.linkedin.com/in/afonso-domingos-6b59361a5/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#222831] hover:text-[#126B3A] transition-colors"
+              >
+                Afonso Domingos
+              </a>
+            </p>
+            <span className="hidden sm:inline text-slate-300">•</span>
+            <span className="text-[#222831] font-semibold">Maputo, Mozambique</span>
+          </div>
         </div>
       </div>
     </footer>
