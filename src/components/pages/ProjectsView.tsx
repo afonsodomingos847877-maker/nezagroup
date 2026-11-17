@@ -3,6 +3,7 @@ import { getProjects } from "@/lib/cms";
 import { getDict } from "@/lib/i18n";
 import { Lang } from "@/lib/routes";
 import { ProjectsGallery } from "@/components/ProjectsGallery";
+import { FlagshipPhotoGallery } from "@/components/FlagshipPhotoGallery";
 
 export async function ProjectsView({ lang }: { lang: Lang }) {
   const t = getDict(lang).projects;
@@ -27,6 +28,9 @@ export async function ProjectsView({ lang }: { lang: Lang }) {
           <ProjectsGallery projects={projects} lang={lang} />
         </div>
       </section>
+
+      {/* Flagship Projects Visual Gallery */}
+      <FlagshipPhotoGallery lang={lang} />
     </div>
   );
 }

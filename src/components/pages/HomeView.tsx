@@ -5,6 +5,7 @@ import { getDict } from "@/lib/i18n";
 import { Lang, ROUTE_MAP } from "@/lib/routes";
 import { getNews, getPartnersData, getProjects, getServices } from "@/lib/cms";
 import { TypewriterTitle } from "@/components/TypewriterTitle";
+import { FlagshipPhotoGallery } from "@/components/FlagshipPhotoGallery";
 
 export async function HomeView({ lang }: { lang: Lang }) {
   const t = getDict(lang);
@@ -275,6 +276,9 @@ export async function HomeView({ lang }: { lang: Lang }) {
           </div>
         </div>
       </section>
+
+      {/* Flagship Photo Gallery (Photo Showcase with NEZA Gradient) */}
+      <FlagshipPhotoGallery lang={lang} />
 
       {/* Sectors of Activity */}
       <section className="bg-[#222831] py-14 sm:py-20 text-white relative overflow-hidden">
