@@ -16,3 +16,4 @@ export async function getMongoDb() {
   const connectedClient = await globalForMongo._mongoClientPromise;
   return connectedClient.db();
 }
+
