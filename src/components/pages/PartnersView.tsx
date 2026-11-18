@@ -34,18 +34,20 @@ export async function PartnersView({ lang }: { lang: Lang }) {
             {data.clients.map((client) => (
               <div
                 key={client.id}
-                className="flex flex-col items-center justify-between rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm"
+                className="group flex flex-col items-center justify-between rounded-xl border border-slate-200 bg-white p-6 text-center shadow-xs hover:border-[#126B3A]/40 hover:shadow-md transition-all"
               >
-                <div className="flex h-24 w-full items-center justify-center">
+                <div className="flex h-24 w-full items-center justify-center p-2">
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className="max-h-20 max-w-full object-contain"
+                    className="max-h-16 sm:max-h-20 max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="mt-4 pt-3 border-t border-slate-100 w-full">
-                  <p className="text-sm font-bold text-[#222831]">{client.name}</p>
-                  <p className="mt-0.5 text-xs text-[#126B3A] font-medium">
+                  <p className="text-sm font-bold text-[#222831] group-hover:text-[#126B3A] transition-colors">
+                    {client.name}
+                  </p>
+                  <p className="mt-0.5 text-xs text-[#126B3A] font-semibold">
                     {lang === "pt" ? client.sectorPt : client.sectorEn}
                   </p>
                 </div>

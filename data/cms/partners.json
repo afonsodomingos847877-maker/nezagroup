@@ -1,14 +1,68 @@
 {
   "clients": [
-    { "id": "cahora-bassa", "name": "Hidroeléctrica de Cahora Bassa", "logo": "/images/clients/cahora-bassa.png", "sectorPt": "Energia", "sectorEn": "Energy" },
-    { "id": "ctrg", "name": "CTRG — Central Térmica de Ressano Garcia", "logo": "/images/clients/ctrg.jpg", "sectorPt": "Energia / Gás", "sectorEn": "Power / Gas" },
-    { "id": "gigawatt", "name": "Gigawatt Moçambique, SA", "logo": "/images/clients/gigawatt.png", "sectorPt": "Energia", "sectorEn": "Energy" },
-    { "id": "kuvaninga", "name": "Kuvaninga", "logo": "/images/clients/kuvaninga.png", "sectorPt": "Energia", "sectorEn": "Energy" },
-    { "id": "twigg", "name": "Twigg Exploration & Mining Limitada", "logo": "/images/clients/twigg.png", "sectorPt": "Mineração", "sectorEn": "Mining" },
-    { "id": "mrm", "name": "MRM — Montepuez Ruby Mining", "logo": "/images/clients/mrm.jpg", "sectorPt": "Mineração", "sectorEn": "Mining" },
-    { "id": "ane", "name": "ANE — Administração Nacional de Estradas, IP", "logo": "/images/clients/ane.png", "sectorPt": "Infraestruturas", "sectorEn": "Infrastructure" },
-    { "id": "edm", "name": "EDM — Electricidade de Moçambique", "logo": "/images/clients/edm.jpg", "sectorPt": "Electricidade", "sectorEn": "Electricity" },
-    { "id": "pure-life", "name": "Pure Life Organic Foods", "logo": "/images/clients/pure-life.jpg", "sectorPt": "Agro-indústria", "sectorEn": "Agribusiness" }
+    {
+      "id": "pure-life",
+      "name": "Pure Life Organic Foods",
+      "logo": "/images/clients/pure-life.png",
+      "sectorPt": "Agro-indústria",
+      "sectorEn": "Agribusiness"
+    },
+    {
+      "id": "ctrg",
+      "name": "CTRG — Central Térmica de Ressano Garcia",
+      "logo": "/images/clients/ctrg.png",
+      "sectorPt": "Energia / Gás",
+      "sectorEn": "Power / Gas"
+    },
+    {
+      "id": "cahora-bassa",
+      "name": "Hidroeléctrica de Cahora Bassa",
+      "logo": "/images/clients/cahora-bassa.png",
+      "sectorPt": "Energia",
+      "sectorEn": "Energy"
+    },
+    {
+      "id": "twigg",
+      "name": "Twigg Exploration & Mining Limitada",
+      "logo": "/images/clients/twigg.png",
+      "sectorPt": "Mineração",
+      "sectorEn": "Mining"
+    },
+    {
+      "id": "gigawatt",
+      "name": "Gigawatt Moçambique, SA",
+      "logo": "/images/clients/gigawatt.png",
+      "sectorPt": "Energia",
+      "sectorEn": "Energy"
+    },
+    {
+      "id": "kuvaninga",
+      "name": "Kuvaninga",
+      "logo": "/images/clients/kuvaninga.png",
+      "sectorPt": "Energia",
+      "sectorEn": "Energy"
+    },
+    {
+      "id": "mrm",
+      "name": "MRM — Montepuez Ruby Mining",
+      "logo": "/images/clients/mrm.png",
+      "sectorPt": "Mineração",
+      "sectorEn": "Mining"
+    },
+    {
+      "id": "edm",
+      "name": "EDM — Electricidade de Moçambique",
+      "logo": "/images/clients/edm.png",
+      "sectorPt": "Electricidade",
+      "sectorEn": "Electricity"
+    },
+    {
+      "id": "ane",
+      "name": "ANE — Administração Nacional de Estradas, IP",
+      "logo": "/images/clients/ane.png",
+      "sectorPt": "Infraestruturas",
+      "sectorEn": "Infrastructure"
+    }
   ],
   "partners": [
     { "id": "hatch", "name": "Hatch", "logo": "/images/partners/hatch.png", "type": "collaborator", "clusterPt": "Design e Engenharia", "clusterEn": "Design & Engineering" },
@@ -36,4 +90,3 @@
     { "id": "ncc", "name": "NCC", "logo": "/images/partners/ncc.png", "type": "partner", "clusterPt": "Parceiros e Associados", "clusterEn": "Partners & Associates" }
   ]
 }
-
