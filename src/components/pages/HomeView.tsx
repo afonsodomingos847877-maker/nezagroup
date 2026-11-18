@@ -6,6 +6,7 @@ import { Lang, ROUTE_MAP } from "@/lib/routes";
 import { getNews, getPartnersData, getProjects, getServices } from "@/lib/cms";
 import { TypewriterTitle } from "@/components/TypewriterTitle";
 import { FlagshipPhotoGallery } from "@/components/FlagshipPhotoGallery";
+import { DynamicHeroBanner } from "@/components/DynamicHeroBanner";
 
 export async function HomeView({ lang }: { lang: Lang }) {
   const t = getDict(lang);
@@ -35,61 +36,13 @@ export async function HomeView({ lang }: { lang: Lang }) {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#222831] text-white">
-        <div className="absolute inset-0">
-          <img
-            src="/images/bannerneza.jpg"
-            alt="NEZA GROUP Engineering & Infrastructure Banner"
-            className="h-full w-full object-cover object-top"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#222831]/85 via-[#222831]/40 to-transparent" />
-        </div>
-
-        <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
-          <div className="max-w-3xl animate-fade-in-up">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3.5 py-1.5 text-[11px] sm:text-xs font-semibold tracking-wider text-white uppercase mb-5 backdrop-blur-xs">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#126B3A]" />
-              {t.hero.badge}
-            </span>
-            <TypewriterTitle
-              as="h1"
-              text={t.hero.title}
-              speedMs={20}
-              cursorClassName="bg-white"
-              className="text-2xl font-black tracking-tight text-white sm:text-4xl lg:text-[52px] leading-[1.12]"
-            />
-            <p className="mt-5 text-sm sm:text-lg leading-relaxed text-slate-200 max-w-2xl">
-              {t.hero.subtitle}
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-3.5">
-              <Link
-                href={routes.business}
-                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-lg bg-[#126B3A] px-6 py-3.5 text-sm font-bold text-white shadow-lg hover:bg-[#0D502B] hover:-translate-y-0.5 transition-all"
-              >
-                <span>{t.hero.ctaPrimary}</span>
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-              <Link
-                href={routes.contact}
-                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-lg border border-white/35 bg-white/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur-sm hover:bg-white/20 transition-all"
-              >
-                <span>{t.hero.ctaSecondary}</span>
-              </Link>
-            </div>
-          </div>
-
-          {/* Institutional Pillars Bar */}
-          <div className="mt-12 sm:mt-16 grid grid-cols-1 gap-4 sm:grid-cols-3 border-t border-white/15 pt-8">
-            {heroPillars.map((p) => (
-              <div key={p.title} className="rounded-lg bg-white/5 border border-white/10 p-4 backdrop-blur-xs">
-                <p className="text-sm font-bold text-white">{p.title}</p>
-                <p className="mt-1 text-xs text-slate-300 leading-relaxed">{p.sub}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Dynamic Hero Carousel Section */}
+      <DynamicHeroBanner
+        lang={lang}
+        routes={routes}
+        heroPillars={heroPillars}
+        ctaSecondaryText={t.hero.ctaSecondary}
+      />
 
       {/* Institutional Introduction */}
       <section className="bg-white py-14 sm:py-20">
