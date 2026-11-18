@@ -86,7 +86,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     categoryLabelEn: "Solar & Renewables",
     locationPt: "Bloemfontein, África Austral",
     locationEn: "Bloemfontein, Southern Africa",
-    image: "/images/projects/chokwe-aerial.jpg",
+    image: "/images/hero/solar-park-hd.png",
     client: "Produtor Independente de Energia (IPP)",
     descPt:
       "Parque solar fotovoltaico de grande escala com milhares de módulos monocristalinos e estações de inversão.",
@@ -102,7 +102,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     categoryLabelEn: "Solar & Renewables",
     locationPt: "Kimberley, África Austral",
     locationEn: "Kimberley, Southern Africa",
-    image: "/images/projects/saldanha-civil.jpg",
+    image: "/images/projects/solar-park-pulida.png",
     client: "Group Five / Consórcio Solar",
     descPt:
       "Subcontratação especializada para instalação mecânica, cablagem de alta tensão e testes de comissionamento.",

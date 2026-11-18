@@ -40,6 +40,7 @@
     "scopePt": "Instalação e comissionamento de obras eléctricas: cabos de baixa e média tensão, serviços auxiliares AC de baixa tensão, montagem de painéis HV e LV, fornecimento e instalação de luminárias, montagem de caixas PCB e SCB, e instalação, ligação e ensaio do sistema de terra.",
     "scopeEn": "Installation and commissioning of electrical works: low and medium voltage cables, AC low voltage auxiliary services, assembly of HV and LV electrical panels, supply and installation of light fittings, assembly of PCB and SCB boxes, and installation, connection and testing of earthing system.",
     "images": [
+      "/images/hero/solar-park-hd.png",
       "/images/products/electrical-panels-banner.png"
     ],
     "featured": true
@@ -61,6 +62,7 @@
     "scopePt": "Cablagem de strings fotovoltaicas e instalação de caixas de string, sistema de terra e ligação equipotencial para cabines de conversão, cabos solares, ligações internas, cabos RS485 e fibra óptica, lançamento e terminação de cabos de média tensão, ensaios, comissionamento e etiquetagem.",
     "scopeEn": "Electrical string wiring of PV modules and installation of string boxes, earthing and equipotential bonding for conversion cabins, solar cables, internal connections, RS485 and fiber optic cables, laying and termination of medium voltage cables, testing, commissioning and equipment labelling.",
     "images": [
+      "/images/projects/solar-park-pulida.png",
       "/images/products/combiner-box.png"
     ],
     "featured": true

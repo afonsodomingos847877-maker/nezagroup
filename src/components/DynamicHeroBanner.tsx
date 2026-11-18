@@ -82,7 +82,7 @@ const HERO_SLIDES: HeroSlide[] = [
   },
   {
     id: "slide-5",
-    image: "/images/projects/chokwe-aerial.jpg",
+    image: "/images/hero/solar-park-hd.png",
     badgePt: "Energias Renováveis & Transição Energética",
     badgeEn: "Renewable Energy & Energy Transition",
     titlePt: "PARQUES SOLARES FOTOVOLTAICOS DE GRANDE ESCALA EM ÁFRICA.",
