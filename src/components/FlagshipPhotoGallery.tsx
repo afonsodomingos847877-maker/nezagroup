@@ -144,18 +144,18 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "gal-8",
     category: "roads",
-    titlePt: "Montagem do Tabuleiro e Cabos de Suspensão da Ponte",
-    titleEn: "Bridge Deck Assembly & Suspension Cables",
+    titlePt: "Viadutos Rodoviários e Obras de Arte Estruturantes",
+    titleEn: "Highway Viaducts & Structural Bridge Engineering",
     categoryLabelPt: "Pontes & Estradas",
     categoryLabelEn: "Bridges & Roads",
-    locationPt: "Baía de Maputo, Moçambique",
-    locationEn: "Maputo Bay, Mozambique",
-    image: "/images/projects/katembe-deck.png",
+    locationPt: "Corredores Regionais, África Austral",
+    locationEn: "Regional Corridors, Southern Africa",
+    image: "/images/hero/bridge-highway.png",
     client: "Consórcio Internacional de Construção",
     descPt:
-      "Engenharia estrutural pesada, montagem mecânica de aduelas metálicas e tensionamento de cabos mestres.",
+      "Engenharia estrutural pesada, pilares de betão armado e superestruturas rodoviárias de alta capacidade.",
     descEn:
-      "Heavy structural engineering, steel deck modular erection and high-tensile main cable tensioning.",
+      "Heavy structural engineering, reinforced concrete piers and high-capacity prestressed highway viaducts.",
   },
   {
     id: "gal-9",
